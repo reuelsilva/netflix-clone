@@ -1,7 +1,7 @@
 # netflix-clone
 Projeto de clone da Netflix em React com Vite
   <div align="center">
-    <img src="https://a.imagem.app/okzo83.png" height="320"/>        
+    <img src="https://a.imagem.app/okzo83.png" height="350"/>        
   </div>
  <h2>Tecnologias</h2>
  <ul>
