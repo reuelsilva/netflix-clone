@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         dark: "#141414",
+        black: {
+          100: "#0009"
+        },
         gray: {
           100: "#999"
         },
@@ -22,11 +25,19 @@ const config: Config = {
         "transparent-dark": "rgba(20, 20, 20, 0.00)"
       },
       spacing: {
+        33: "132px",
+        49.5: "198px",
         100: "400px",
         150: "600px"
       },
       zIndex: {
         2: "2"
+      },
+      transitionDuration:{
+        800: "800ms"
+      },
+      gradientColorStopPositions: {
+        "7.48%": "7.48%"
       }
     },
   },
