@@ -1,7 +1,8 @@
 "use client"
 import { ReactElement } from "react"
-import Preview from "./Preview"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import Preview from "./Preview"
+import OriginalShows from "./OriginalShows"
 
 export default function Main():ReactElement{
     const client = new QueryClient()
@@ -9,6 +10,7 @@ export default function Main():ReactElement{
         <main>
             <QueryClientProvider client={client}>
                 <Preview/>
+                <OriginalShows/>
             </QueryClientProvider>
         </main>
     )
