@@ -28,7 +28,7 @@ export default function OriginalShows():ReactElement{
     }
     
    return(
-        <HorizontalRow id="originals-row" onMouseEnter={() => toggleScrollButttons("#originals-row > button")} onMouseLeave={() => toggleScrollButttons("#originals-row > button")}>
+        <HorizontalRow id="originals-row" onMouseEnter={() => toggleScrollButttons("#originals-row > button")} onMouseLeave={() => toggleScrollButttons("#originals-row > button")} style={{marginTop: "-56px"}}>
             <ArrowBack onClick={() => scrollingLeft(scrollX)}/>
             <ArrowNext onClick={() => scrollingRight(scrollX)}/>
             <RowTitle>Originais Netflix</RowTitle>
