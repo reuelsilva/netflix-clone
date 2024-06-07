@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import getOriginalShows from "./get-original-shows";
+import getOriginalShows from "../utils/get-original-shows";
 
 export default function useOriginalShows(){
     const query = useQuery({

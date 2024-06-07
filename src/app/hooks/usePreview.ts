@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import getTitleShow from "./get-title-show";
-import getIdShow from "./get-id-show";
+import getTitleShow from "../utils/get-title-show";
+import getIdShow from "../utils/get-id-show";
 
 export default function usePreview(){
     const {data:id} = useQuery({

@@ -2,7 +2,7 @@
 import { ReactElement } from "react";
 import usePreview from "@/app/hooks/usePreview";
 import Loading from "./Loading";
-import getYearDate from "@/app/hooks/get-year-date";
+import getYearDate from "@/app/utils/get-year-date";
 import PlayButton from "./PlayButton";
 import MoreInfoButton from "./MoreInfoButton";
 
