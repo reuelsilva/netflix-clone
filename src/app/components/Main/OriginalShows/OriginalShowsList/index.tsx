@@ -1,7 +1,8 @@
 "use client"
-import useOriginalShows from "@/app/hooks/useOriginalShows";
-import Image from "next/image";
 import { ReactElement } from "react";
+import useOriginalShows from "@/app/hooks/useOriginalShows";
+import Card from "../../Card";
+import Image from "next/image";
 
 interface OriginalShowsListProps{
     marginLeft: number
@@ -16,9 +17,9 @@ export default function OriginalShowsList({marginLeft}: OriginalShowsListProps):
                 isSuccess && (
                     data?.map((original, id) => {
                         return(
-                            <div key={id} className="w-33 h-49.5 cursor-pointer rounded overflow-hidden">
-                                <Image className="max-w-fit" src={`https://image.tmdb.org/t/p/original${original.poster_path}`} alt="Show Poster" width={132} height={198}/>
-                            </div>
+                            <Card key={id}>
+                                <Image src={`https://image.tmdb.org/t/p/original${original.poster_path}`} alt="Original Netflix" width={200} height={200}/>
+                            </Card>
                         )
                     })
                 )
