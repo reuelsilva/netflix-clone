@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const anta = Roboto({
+const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
   weight: ["100","300","400","500","700","900"]
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`bg-dark ${anta.className}`}>{children}</body>
+      <body className={`bg-dark ${roboto.className}`}>{children}</body>
     </html>
   );
 }
