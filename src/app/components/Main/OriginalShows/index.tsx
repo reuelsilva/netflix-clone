@@ -2,8 +2,10 @@
 import { ReactElement, useState } from "react";
 import OriginalShowsList from "./OriginalShowsList";
 import ArrowBack from "../ArrowBack";
-import ArrowForward from "../ArrowForward";
-import toggleScrollButttons from "@/app/hooks/toggle-scroll-buttons";
+import ArrowNext from "../ArrowNext";
+import toggleScrollButttons from "@/app/utils/toggle-scroll-buttons";
+import HorizontalRow from "../HorizontalRow";
+import RowTitle from "../RowTitle";
 
 export default function OriginalShows():ReactElement{
     const [scrollX, setScrollX] = useState(0)
@@ -26,11 +28,11 @@ export default function OriginalShows():ReactElement{
     }
     
    return(
-        <section id="originals-row" className="relative px-4 sm:px-16 mb-14 -mt-14 z-2 overflow-x-hidden bg-gradient-to-b from-transparent-dark from-0% to-dark to-7.48%" onMouseEnter={toggleScrollButttons} onMouseLeave={toggleScrollButttons}>
+        <HorizontalRow id="originals-row" onMouseEnter={() => toggleScrollButttons("#originals-row > button")} onMouseLeave={() => toggleScrollButttons("#originals-row > button")}>
             <ArrowBack onClick={() => scrollingLeft(scrollX)}/>
-            <ArrowForward onClick={() => scrollingRight(scrollX)}/>
-            <h2 className="text-xl mb-4 text-white font-bold">Originais Netflix</h2>
+            <ArrowNext onClick={() => scrollingRight(scrollX)}/>
+            <RowTitle>Originais Netflix</RowTitle>
             <OriginalShowsList marginLeft={scrollX}/>
-        </section>
+        </HorizontalRow>
     )
 }
