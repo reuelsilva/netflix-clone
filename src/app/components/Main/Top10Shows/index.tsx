@@ -31,7 +31,7 @@ export default function Top10Shows():ReactElement{
         <HorizontalRow id="top10-shows-row" onMouseEnter={() => toggleScrollButttons("#top10-shows-row > button")} onMouseLeave={() => toggleScrollButttons("#top10-shows-row > button")}>
             <ArrowBack onClick={() => scrollingLeft(scrollX)}/>
             <ArrowNext onClick={() => scrollingRight(scrollX)}/>
-            <RowTitle>Brasil: top 10 em séries</RowTitle>
+            <RowTitle>Brasil: top 10 em séries hoje</RowTitle>
             <Top10ShowsList marginLeft={scrollX}/>
         </HorizontalRow>
     )
