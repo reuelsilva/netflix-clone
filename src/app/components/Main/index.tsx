@@ -5,6 +5,7 @@ import Preview from "./Preview"
 import OriginalShows from "./OriginalShows"
 import Top10Movies from "./Top10Movies"
 import Top10Shows from "./Top10Shows"
+import NewReleases from "./NewReleases"
 
 export default function Main():ReactElement{
     const client = new QueryClient()
@@ -15,6 +16,7 @@ export default function Main():ReactElement{
                 <OriginalShows/>
                 <Top10Movies/>
                 <Top10Shows/>
+                <NewReleases/>
             </QueryClientProvider>
         </main>
     )
