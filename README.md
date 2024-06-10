@@ -10,6 +10,7 @@
  <ul>
     <li>React 🔵</li>
     <li>NextJS ⚫</li>
+    <li>Typescript 🔵</li> 
     <li>JavaScript 🟡</li> 
     <li>Tailwind CSS 🔵</li> 
     <li>HTML 🟠</li> 
